@@ -10,7 +10,7 @@ This repository contains a **Python backtest for a macro volatility overlay stra
 - **Trade Type:** Iron Condors and ATM straddles.
 - **Time Horizon:** 30-day options.
 - **Position Sizing:** €150k notional per product.
-- **Execution Model:** Includes realistic broker execution delay (40–120 minutes) and bid/ask slippage (0.1%).
+- **Execution Model:** Includes realistic broker execution delay. The bid/ask slippage (0.1%).
 
 ## Current Market Conditions (Sep 2025)
 

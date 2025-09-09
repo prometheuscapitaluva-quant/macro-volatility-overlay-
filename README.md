@@ -30,8 +30,23 @@ This repository contains a **Python backtest for a macro volatility overlay stra
 
 ## Usage
 
-1. Provide CSV files: `eurusd.csv`, `spx.csv`, `kc.csv` with columns: `date,close`.
-2. Run the backtest:
+#Please use the following python scripts for best free usage of the data sets you will need. Quandl (https://data.nasdaq.com/?utm_source) and specific Brokerage Exchange data will have paywalls.'
+
+import yfinance as yf
+
+# Coffee
+kc = yf.download("KC=F", start="2023-01-01", end="2025-09-01")
+kc[['Close']].to_csv("data/kc.csv", index_label='date')
+
+# SPX
+spx = yf.download("^GSPC", start="2023-01-01", end="2025-09-01")
+spx[['Close']].to_csv("data/spx.csv", index_label='date')
+
+# EUR/USD
+eurusd = yf.download("EURUSD=X", start="2023-01-01", end="2025-09-01")
+eurusd[['Close']].to_csv("data/eurusd.csv", index_label='date')
+#Use of Ai for the above code has been employed as this strategy is meant to be implemented on an institutional level, in size. 
+
 
 ```bash
 python macro_vol_overlay.py

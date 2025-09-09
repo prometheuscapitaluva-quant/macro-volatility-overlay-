@@ -45,7 +45,9 @@ spx[['Close']].to_csv("data/spx.csv", index_label='date')
 # EUR/USD
 eurusd = yf.download("EURUSD=X", start="2023-01-01", end="2025-09-01")
 eurusd[['Close']].to_csv("data/eurusd.csv", index_label='date')
-#Use of Ai for the above code has been employed as this strategy is meant to be implemented on an institutional level, in size. 
+
+#Use of Ai for the above code has been employed. 
+#Please also keep in mind the strtegy implemented above is for institutional trading. 
 
 
 ```bash

@@ -61,8 +61,8 @@ We use option pricing models such as **Black 76** (for futures options) to build
 
 - **Strategies:** Macro volatility overlays (commodities, indices, FX).  
 - **Instruments:** Options on futures (e.g., Coffee, S&P 500 futures, EUR/USD).  
-- **Execution Context:** Designed for delayed broker fills (40 min – 2 hours).  
-- **Focus:** Simple, interpretable models with real-world execution constraints.
+- **Execution Context:** Designed for expectation with delayed broker fills.  
+- **Focus:** Simple, interpretable models with real-market execution constraints.
 
 ---
 

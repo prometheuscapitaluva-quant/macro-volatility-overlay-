@@ -49,7 +49,7 @@ eurusd[['Close']].to_csv("data/eurusd.csv", index_label='date')
 #Use of Ai for the above code has been employed. 
 #Please also keep in mind the strtegy implemented above is for institutional trading. 
 
-# 📊 Macro Volatility Overlay Strategies
+## Macro Volatility Overlay Strategies
 
 This repository contains research code and notes for developing **macro derivative strategies**, focusing on volatility structures in commodity and index futures.
 
@@ -57,7 +57,7 @@ We use option pricing models such as **Black 76** (for futures options) to build
 
 ---
 
-## 🚀 Overview
+## Overview
 
 - **Strategies:** Macro volatility overlays (commodities, indices, FX).  
 - **Instruments:** Options on futures (e.g., Coffee, S&P 500 futures, EUR/USD).  
@@ -66,7 +66,7 @@ We use option pricing models such as **Black 76** (for futures options) to build
 
 ---
 
-## 📐 Intuition Behind Black 76
+##  Intuition Behind Black 76
 
 The **Black 76 model** is a variant of Black-Scholes, designed for **options on futures or forwards** rather than spot assets.  
 

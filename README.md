@@ -128,25 +128,5 @@ For puts, the roles flip: you’re insuring against downside, so the payoff come
 
 ---
 
-## 🧮 Example: Black 76 Option Pricer
-
-```python
-from math import log, sqrt
-from scipy.stats import norm
-
-def black76_price(f, k, t, sigma, is_call=True):
-    """ Price a European option on futures using Black 76 """
-    if t <= 0 or sigma <= 0:
-        return max(0.0, (f - k) if is_call else (k - f))
-    
-    d1 = (log(f / k) + 0.5 * sigma**2 * t) / (sigma * sqrt(t))
-    d2 = d1 - sigma * sqrt(t)
-    
-    if is_call:
-        return f * norm.cdf(d1) - k * norm.cdf(d2)
-    else:
-        return k * norm.cdf(-d2) - f * norm.cdf(-d1)
-
-
 ```bash
 python macro_vol_overlay.py
